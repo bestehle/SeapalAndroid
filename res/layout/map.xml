@@ -8,12 +8,12 @@
             android:layout_width="fill_parent"
             android:layout_height="match_parent"
             android:layout_alignParentLeft="true"
-            android:apiKey="0_QXbRf-wOv0KEslY64I2qHS89jYR6-dNRmN3Hw"
+            android:apiKey="AIzaSyBfS22XWfX71t9FxPzGJ7KPfJjpBhEM-qY"
             android:clickable="true"
             android:enabled="true" >
         </com.google.android.maps.MapView>
         
-        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        <RelativeLayout 
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true">
@@ -42,7 +42,7 @@
 				android:layout_marginTop="270dp"                
                 android:layout_centerHorizontal="true" />
         
-        <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        <FrameLayout 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" >
                 
@@ -52,7 +52,7 @@
                 	android:layout_height="match_parent" />
         </FrameLayout>
         
-        <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        <FrameLayout 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" >
                 
