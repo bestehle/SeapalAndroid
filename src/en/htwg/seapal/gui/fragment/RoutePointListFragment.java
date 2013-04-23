@@ -5,6 +5,7 @@ import java.text.DecimalFormat;
 import java.text.NumberFormat;
 
 import en.htwg.seapal.R;
+import en.htwg.seapal.Observer.Event;
 import en.htwg.seapal.Observer.IObserver;
 import en.htwg.seapal.controller.GeoInformationController;
 import en.htwg.seapal.controller.RouteController;
@@ -110,7 +111,7 @@ public class RoutePointListFragment extends ListFragment implements IObserver {
 	}
 	
 	@Override
-	public void update() {
+	public void update(Event e) {
 		Cursor c = adapter.swapCursor(routeController.getRoute(route.ID));	
 		adapter.notifyDataSetChanged();
 		this.getListView().invalidateViews();

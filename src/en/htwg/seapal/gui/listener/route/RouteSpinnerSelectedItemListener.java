@@ -1,5 +1,6 @@
 package en.htwg.seapal.gui.listener.route;
 
+import en.htwg.seapal.Observer.Event;
 import en.htwg.seapal.gui.activity.RouteActivity;
 import en.htwg.seapal.model.models.Route;
 import android.view.View;
@@ -17,10 +18,11 @@ public class RouteSpinnerSelectedItemListener implements OnItemSelectedListener 
 	
 	@Override
 	public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+		Event e = null;
 		Spinner route = activity.getRoute();
 		Route r = (Route) route.getAdapter().getItem(position);
 		activity.getListView().setRoute(r);
-		activity.getListView().update();
+		activity.getListView().update(e);
 		activity.getRouteName().setText(r.name);
 
 	}
